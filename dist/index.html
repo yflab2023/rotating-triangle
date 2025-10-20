@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotating Triangle</title>
+    <!-- <style>
+        body {
+            margin: 0;
+            background: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        canvas {
+            background: #000;
+        }
+    </style> -->
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            margin: 0;
+            padding: 20px;
+            background: #f6f7fb;
+        }
+
+        canvas {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            width: 480px;
+            height: 480px;
+        }
+
+        .controls {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        label {
+            font-size: 14px;
+        }
+
+        input[type="range"] {
+            width: 120px;
+        }
+
+        button {
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            background: white;
+            cursor: pointer;
+        }
+    </style>
+  <script type="module" crossorigin src="./assets/index-36KCYnjl.js"></script>
+</head>
+
+<body>
+    <h2>回転する三角形（TypeScript + Canvas）</h2>
+
+    <div class="controls">
+        <label for="speed">速度</label>
+        <input id="speed" type="range" min="-4" max="4" step="0.01" value="1" />
+        <label for="size">サイズ</label>
+        <input id="size" type="range" min="20" max="300" step="1" value="160" />
+        <input id="color" type="color" value="#ff6b6b" title="三角形の色" />
+        <button id="pause">一時停止</button>
+        <button id="reset">リセット</button>
+    </div>
+
+    <canvas id="canvas" width="480" height="480"></canvas>
+</body>
+
+</html>
