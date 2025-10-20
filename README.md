@@ -65,3 +65,7 @@
     ```
     https://<username>.github.io/<repository-name>/
     ```
+
+## Tips for GitHub
+- https://docs.github.com/ja/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+- https://zenn.dev/miz_dev/articles/nodemodule-ignore
